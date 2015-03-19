@@ -5,7 +5,7 @@ require('./support/globals');
 var grunt = require('grunt');
 var Mocha = require('mocha');
 
-var mocha = new Mocha({ reporter: 'spec', ui: 'bdd'});
+var mocha = new Mocha({ reporter: 'awesome', ui: 'bdd'});
 
 function run(cb) {
   var files = grunt.file.expand('test/backend/**/*.spec.js');
