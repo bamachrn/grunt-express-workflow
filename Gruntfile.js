@@ -571,7 +571,7 @@ module.exports = function (grunt) {
                 ignoreLeaks: false,
                 // grep: '*.spec',
                 ui: 'bdd',
-                reporter: 'spec'
+                reporter: 'mochawesome --no-exit'
             },
             backend: {
                 src: [
