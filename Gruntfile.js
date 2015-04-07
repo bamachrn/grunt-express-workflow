@@ -130,17 +130,17 @@ module.exports = function (grunt) {
                 }],
             },
         },
-        // jshint: {
-        //     options: {
-        //         jshintrc: '.jshintrc'
-        //     },
-        //     all: [
-        //         'Gruntfile.js',
-        //         '<%= yeoman.app %>/scripts/**/*.js',
-        //         '!<%= yeoman.app %>/scripts/vendor/*',
-        //         'test/spec/**/*.js'
-        //     ]
-        // },
+        jshint: {
+             options: {
+                 jshintrc: '.jshintrc'
+             },
+             all: [
+       //          'Gruntfile.js',
+                 '<%= yeoman.app %>/scripts/**/*.js',
+                 '!<%= yeoman.app %>/scripts/vendor/*',
+                 'test/spec/**/*.js'
+             ]
+        },
         // mocha: {
         //     all: {
         //         options: {
@@ -642,7 +642,7 @@ module.exports = function (grunt) {
 
         // faster tests without Istanbul coverage
         // 'karma:appContinuousNoCoverage',
-        // 'simplemocha:backend',
+        'simplemocha:backend',
     ]);
 
     grunt.registerTask('build', [
@@ -678,8 +678,9 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        // 'jshint',
-        // 'test',
+        //'jshint',
+        //'server',
+        //'test',
         'build'
     ]);
 };
